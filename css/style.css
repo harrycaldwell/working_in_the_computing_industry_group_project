@@ -1,1 +1,34 @@
 /*Will add to this when content starts getting added to the page*/
+body{
+    margin: 0;
+    background-color: white;
+    font-family: Arial;
+}
+/*CSS for the top nav bar any of the colours are just place holders*/
+.topnav{
+    background-image: linear-gradient(to bottom right,#1b7ced, #10a8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+}
+.topnav a{
+    float: left;
+    text-align: center;
+    padding: 10px 10px; /*This can allow you to make each button bigger*/
+    color: white;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: white;
+    color: black;
+}
+.topnav a.active{
+    background-color: #000137;
+    color: white;
+}
+.topnav a.active:hover{
+    background-color: black;
+    color: white;
+}
