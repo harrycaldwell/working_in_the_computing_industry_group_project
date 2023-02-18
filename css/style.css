@@ -1,34 +1,59 @@
 /*Will add to this when content starts getting added to the page*/
-body{
+body{ /*Place holder body CSS*/
     margin: 0;
     background-color: white;
     font-family: Arial;
 }
 /*CSS for the top nav bar any of the colours are just place holders*/
-.topnav{
-    background-image: linear-gradient(to bottom right,#1b7ced, #10a8);
+.topnav{ /*This is the CSS for the whole nav bar*/
+    background-image: linear-gradient(to bottom right,#1b7ced, #10a8); /*colours a place holder but is a gradient from blue to light blue*/
     position: fixed;
-    top: 0;
+    top: 0; /*puts the bar at the top*/
     width: 100%;
     overflow: hidden;
-    text-decoration: none;
+    transition-duration: 0.5s; /*The speed of which the element is changed (for this due to scroll down)*/
 }
-.topnav a{
+.topnav a{ /*This is the CSS for each button on the nav bar*/
     float: left;
     text-align: center;
     padding: 10px 10px; /*This can allow you to make each button bigger*/
     color: white;
     text-decoration: none;
+    transition-duration: 0.2s; /*The speed of which the element is changed (for this due to hover)*/
 }
 .topnav a:hover{
     background-color: white;
     color: black;
 }
-.topnav a.active{
+.topnav a.active{ /*This is the CSS for the "active" button in the nav bar which should be the current page the user is on (change this in HTML)*/
     background-color: #000137;
     color: white;
 }
 .topnav a.active:hover{
     background-color: black;
     color: white;
+}
+
+/*CSS for possible grid system to allow for a responsive design???*/
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
