@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Can be changed-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>CI453 group project</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+
+    </head>
+
+    <body>
+        <!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+        <div class="topnav" id="myTopnav">
+            <!-- the active class specifies which page you are on -->
+            <a href="index.html">Home</a>
+            <!-- these are just examples of pages for now -->
+            <a>Advice & guidance</a>
+            <a>Education</a>
+            <a>Sources</a>
+            <a class="active" href="contactus.html">Contact us?</a>
+        </div>
+
+        <div class="source-grid-container">
+            <div class="item1">Header</div>
+            
+            <div class="item2">
+                
+                <form id="Contact-Info">
+                    <fieldset>
+                        <legend>Your contact details</legend>
+                        <label for="name">Name <em>(required)</em></label>
+                        <input type="text" id="name" required placeholder="Forename+Surname">
+                        <label for="email">Email address <em>(required)</em></label>
+                        <input type="text" id="email" required placeholder="username@service.com">
+                    </fieldset>
+                </form>
+
+                <fieldset>
+                    <legend>Please input your message here!</legend>
+                    <label for="message">Message: </label>
+                    <textarea id="message" required></textarea>
+                </fieldset>
+
+                <input type="submit" id="contact_sub" value="Click to send">
+            </div>
+
+                
+
+            <div class="item4">Footer</div>
+        </div>
+    </body>
+</html>
