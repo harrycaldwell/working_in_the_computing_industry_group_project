@@ -33,6 +33,15 @@ body{ /*Place holder body CSS*/
     background-color: black;
     color: white;
 }
+.topnav img.logo{ /*the image with the class logo on the navbar goes to the far right*/
+    float: right;
+    height: 38px;
+    transition-duration: 0.2s; /*The speed of which the element is changed (for this due to hover)*/
+}
+.topnav img.logo:hover{
+    content: url("/images/logo/png/logo-no-background-black.png");
+    background-color: white;
+}
 
 /*CSS for possible grid system to allow for a responsive design???*/
 .item1 { grid-area: header; }
@@ -40,17 +49,59 @@ body{ /*Place holder body CSS*/
 .item3 { grid-area: right; }
 .item4 { grid-area: footer; }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'header header header header header header'
-    'main main main main right right'
-    'footer footer footer footer footer footer';
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
+img.item1{ /*header image this does not work yet*/
+    float: left;
+    object-fit: contain;
+    height: 100px;
 }
-
+/*different media queries allow for change in CSS and HTML (AKA small screen less seen) these can be changed using the grid-template-areas and making the items visibility hidden like below*/
+@media screen and (min-width: 800px) { /*this is the grid CSS for a normal screen size*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'main main main main right right'
+        'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .item3{
+        visibility: visible; /*encase it wasn't visible */
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 799px) { /*for phone like screen (not tested on my phone yet)*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .item3{ /*right is not displayed for this screen size*/
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-device-width: 799px) and (orientation: landscape) { /*for smaller screens*/
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .item3{ /*right is not displayed for this screen size*/
+        visibility: hidden;
+        display: none;
+    }
+}
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
