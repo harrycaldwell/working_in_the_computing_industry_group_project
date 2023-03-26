@@ -49,6 +49,32 @@ body{ /*Place holder body CSS*/
 .item3 { grid-area: right; }
 .item4 { grid-area: footer; }
 
+.item1{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/*Item 2 css for the main content of the page*/
+.item2>p{
+    font-size: 15px;
+}
+
+.update_tutorial>section{
+    font-size: 15px;
+}
+
+.tutorial{
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.item2>h2{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
 img.item1{ /*header image this does not work yet*/
     float: left;
     object-fit: contain;
