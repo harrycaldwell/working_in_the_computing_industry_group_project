@@ -5,7 +5,7 @@
   <title>CI453 group project</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
-  <script src="javaScript/accordion.js"></script>
+
 
 </head>
 
@@ -28,6 +28,7 @@
     <p>Advice for those concerned a device has been infected.</p>
   </div>
   <div class="item2">
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <p>Advice for those concerned a device has been infected.</p>
     <p>If you suspect your PC, tablet or phone has been infected with a virus or some other form of malware, follow these three steps to remove the infection and restore your device.</p>
     <ol>
@@ -128,22 +129,6 @@
   </div>
   <div class="item4">Footer</div>
 </div>
-
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-</script>
+<script src="javaScript/accordion.js"></script>
 </body>
 </html>
