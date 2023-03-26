@@ -44,10 +44,25 @@ body{ /*Place holder body CSS*/
 }
 
 /*CSS for possible grid system to allow for a responsive design???*/
-.item1 { grid-area: header; }
-.item2 { grid-area: main; }
-.item3 { grid-area: right; }
-.item4 { grid-area: footer; }
+.item1 { grid-area:
+        header;
+}
+.item2 {
+    grid-area: main;
+    text-align: left;
+}
+.item3 {
+    grid-area: right;
+}
+.item4 {
+    grid-area: footer;
+    background-color: #000137;
+    width: 100%;
+    bottom: 0;
+}
+img.item3 {
+    width: 100%;
+}
 
 img.item1{ /*header image this does not work yet*/
     float: left;
