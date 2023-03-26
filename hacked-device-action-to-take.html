@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>CI453 group project</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+  <script src="javaScript/accordion.js"></script>
+
+</head>
+
+<body>
+<!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+<div class="topnav" id="myTopnav">
+  <!-- the active class specifies which page you are on -->
+  <a class="active" href="index.html">Home</a>
+  <!-- these are just examples of pages for now -->
+  <a href="advice_guidance.html">Advice & guidance</a>
+  <a href="sources.html">Sources</a>
+  <a href="contactus.html">Contact us?</a>
+  <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+</div>
+
+<div class="grid-container">
+
+  <div class="item1">
+    <h1>How to recover an infected device</h1>
+    <p>Advice for those concerned a device has been infected.</p>
+  </div>
+  <div class="item2">
+    <p>Advice for those concerned a device has been infected.</p>
+    <p>If you suspect your PC, tablet or phone has been infected with a virus or some other form of malware, follow these three steps to remove the infection and restore your device.</p>
+    <ol>
+      <li>
+        <button class="accordion">Confirm your device is infected</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <p>You may already know for sure because your antivirus product is telling you it has found an infection, or your device is showing ransomware asking you to pay money. </p>
+            </li>
+            <li>
+              <p>If you suspect an infection but aren't sure. The easiest way to confirm an infection on a PC or laptop is to run an antivirus scan and see if it detects anything.</p>
+            </li>
+            <li>
+              <p>If you don't have antivirus, signs of infection include:</p>
+              <ul>
+                <li>
+                  <p>Your device is running slowly, rebooting by itself, frequently closes programs or apps you are using, or opens those you are not.</p>
+                </li>
+                <li>
+                  <p>You have pop-up boxes from programs/apps you don't recognise, asking you to do unexpected things.</p>
+                </li>
+                <li>
+                  <p>Someone you know tells you that they've received unexpected emails from you, advertising unlikely products, or perhaps asking for money.</p>
+                </li>
+                <li>
+                  <p>Some apps on mobile devices try to check if your device has been 'rooted' or 'jailbroken'. These aren't a guarantee that your device has been hacked, but if you haven't actively done either of these to your device then it can be a good indication.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>If you have received a phone call telling you your device is infected and you need their help to clear it up. This is a common scam, the caller often claiming to be from a trusted company such as Microsoft, or your internet service provider. Hang up immediately and report the call to Action Fraud. If such a caller has persuaded you to pay them money, report the call to Action Fraud and your bank or credit card provider.</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button class="accordion">Try and fix the infection</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <p>If you are on a phone or tablet</p>
+              <ul>
+                <li>
+                  <p>These can't usually be fixed by an antivirus product in the same way as PCs and laptops. The safest solution is to do a factory reset - you can usually find this option in the Settings. The exact name of the feature will depend on which type of device you have. The NCSC has published advice where you can learn more about erasing the data on your device </p>
+                </li>
+                <li>
+                  <p>If this doesn't fix the problem, you'll need expert help.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>If you are using a PC or laptop</p>
+              <ul>
+                <li>
+                  <p>Update your device and programs</p>
+                </li>
+                <li>
+                  <p>Open your antivirus product and run a scan, then follow its advice</p>
+                </li>
+                <li>
+                  <p>If your AV can’t clean your device up – you’ll have to wipe it entirely and re-install everything, starting with your operating system. You may need to get expert help to do this.</p>
+                </li>
+                <li>
+                  <p>If you cannot download and install an antivirus product because your web browser (eg Chrome, Edge, Firefox) is infected, you will probably need to get expert help.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button class="accordion">After you've fixed the infection</button>
+        <div class="panel">
+          <ul>
+            <li>
+              <p>Follow our advice for setting up your devices securely and keeping them safe</p>
+            </li>
+            <li>
+              <p>Keep your device and programs/apps up to date</p>
+            </li>
+            <li>
+              <p>Back up your data</p>
+            </li>
+            <li>
+              <p>Check your device is encrypted</p>
+            </li>
+            <li>
+              <p>For PCs and laptops, make sure you have antivirus and that it's updating regularly</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="item3">
+    <!-- <img src="images/hacked device image.jpg" alt="Hacked computer image"> -->
+  </div>
+  <div class="item4">Footer</div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+</body>
+</html>
