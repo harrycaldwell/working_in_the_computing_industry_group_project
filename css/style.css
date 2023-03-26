@@ -44,25 +44,11 @@ body{ /*Place holder body CSS*/
 }
 
 /*CSS for possible grid system to allow for a responsive design???*/
-.item1 { grid-area:
-        header;
-}
-.item2 {
-    grid-area: main;
-    text-align: left;
-}
-.item3 {
-    grid-area: right;
-}
-.item4 {
-    grid-area: footer;
-    background-color: #000137;
-    width: 100%;
-    bottom: 0;
-}
-img.item3 {
-    width: 100%;
-}
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
 img.item1{ /*header image this does not work yet*/
     float: left;
     object-fit: contain;
@@ -99,9 +85,6 @@ img.item1{ /*header image this does not work yet*/
         display: none;
         visibility: hidden;
     }
-    .logo{
-        display: none;
-    }
 }
 @media screen and (max-device-width: 799px) and (orientation: landscape) { /*for smaller screens*/
     .grid-container {
@@ -118,17 +101,7 @@ img.item1{ /*header image this does not work yet*/
         visibility: hidden;
         display: none;
     }
-    .logo{
-        display: none;
-    }
 }
-
-@media screen and (max-device-width: 406px) {
-    .topnav a.active{
-        display: none;
-    }
-}
-
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -162,17 +135,8 @@ label {
 }
 
 input {
-    border-color: #1b7ced;
-    border-style: solid;
-    border-radius: 3px;
     display: block;
     clear:both;
-    transition-duration: 0.2s;
-}
-
-input:hover{
-    border-color: #000137;
-    border-radius: 5px;
 }
 
 textarea {
@@ -180,31 +144,4 @@ textarea {
     float: left;
     width: 50%;
     height: 100%;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion{
-    background-color: lightblue;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover{
-    background-color: #000137;
-    color: white;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    text-align: left;
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
 }
