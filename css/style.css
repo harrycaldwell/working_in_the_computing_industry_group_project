@@ -2,15 +2,26 @@
 body{ /*Place holder body CSS*/
     margin: 0;
     background-color: white;
-    font-family: Arial;
+    font-family: Arial, serif;
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
 }
 /*CSS for the top nav bar any of the colours are just place holders*/
 .topnav{ /*This is the CSS for the whole nav bar*/
+    font-size: 80%;
     background-image: linear-gradient(to bottom right,#1b7ced, #10a8); /*colours a place holder but is a gradient from blue to light blue*/
     position: fixed;
     top: 0; /*puts the bar at the top*/
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition-duration: 0.5s; /*The speed of which the element is changed (for this due to scroll down)*/
 }
 .topnav a{ /*This is the CSS for each button on the nav bar*/
@@ -21,7 +32,7 @@ body{ /*Place holder body CSS*/
     text-decoration: none;
     transition-duration: 0.2s; /*The speed of which the element is changed (for this due to hover)*/
 }
-.topnav a:hover{
+.topnav a:hover, .dropbtn:hover{
     background-color: white;
     color: black;
 }
@@ -81,9 +92,9 @@ img.item1{ /*header image this does not work yet*/
         background-color: #2196F3;
         padding: 10px;
     }
-    .item3{
-        visibility: visible; /*encase it wasn't visible */
-    }
+    /*.item3{
+        visibility: visible; /*encase it wasn't visible
+    }*/
 }
 @media screen and (orientation: portrait) and (max-width: 799px) { /*for phone like screen (not tested on my phone yet)*/
     .grid-container {
@@ -91,15 +102,16 @@ img.item1{ /*header image this does not work yet*/
         grid-template-areas:
         'header header header header header header'
         'main main main main main main'
+        'right right right right right right'
         'footer footer footer footer footer footer';
         gap: 10px;
         background-color: #2196F3;
         padding: 10px;
     }
-    .item3{ /*right is not displayed for this screen size*/
+    /*.item3{ /*right is not displayed for this screen size
         display: none;
         visibility: hidden;
-    }
+    } */
 }
 @media screen and (max-device-width: 799px) and (orientation: landscape) { /*for smaller screens*/
     .grid-container {
@@ -107,15 +119,16 @@ img.item1{ /*header image this does not work yet*/
         grid-template-areas:
         'header header header header header header'
         'main main main main main main'
+        'right right right right right right'
         'footer footer footer footer footer footer';
         gap: 10px;
         background-color: #2196F3;
         padding: 10px;
     }
-    .item3{ /*right is not displayed for this screen size*/
-        visibility: hidden;
+    /*.item3{ /*right is not displayed for this screen size
         display: none;
-    }
+        visibility: hidden;
+    } */
 }
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
@@ -129,7 +142,7 @@ img.item1{ /*header image this does not work yet*/
     display: grid;
     grid-template-areas:
     'header header header header header header'
-    'main main main main main main '
+    'main main main main main main'
     'footer footer footer footer footer footer';
     gap:10px;
     background-color: #2196F3;
@@ -163,6 +176,7 @@ textarea {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-family: Arial, serif;
     background-color: lightblue;
     cursor: pointer;
     padding: 18px;
@@ -171,6 +185,7 @@ textarea {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -181,8 +196,89 @@ textarea {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+    font-family: Arial, serif;
+    text-align: left;
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
+    font-size: 20px;
+}
+
+/*Style for a dropdown menu*/
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: Arial, serif; /* Important for vertical align on mobile phones */
+    font-size: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    transition-duration: 0.2s;
+}
+
+.dropbtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropbtn.active{
+    background-color: #000137;
+    color: white;
+}
+
+.dropbtn.active:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 100%;
+    transition-duration: 0.2s;
+}
+
+.dropdown-content a.active{
+    color:white;
+    background-color: #000137;
+}
+
+.dropdown-content a.active:hover{
+    color:white;
+    background-color: black;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }

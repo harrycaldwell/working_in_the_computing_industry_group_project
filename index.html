@@ -5,20 +5,30 @@
         <title>CI453 group project</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
-
+        <title>NCSC Homepage</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
     </head>
 
     <body>
-        <!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
-        <div class="topnav" id="myTopnav">
-            <!-- the active class specifies which page you are on -->
-            <a class="active" href="index.html">Home</a>
-            <!-- these are just examples of pages for now -->
-            <a href="advice_guidance.html">Advice & guidance</a>
-            <a href="sources.html">Sources</a>
-            <a href="contactus.html">Contact us?</a>
-            <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+    <!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+    <div class="topnav" id="myTopnav">
+        <!-- the active class specifies which page you are on -->
+        <a href="index.html" class="active">Home</a>
+        <!-- these are just examples of pages for now -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='advice_guidance.html'">Advice & Guidance
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="recovering-a-hacked-account.html">Recovering an account</a>
+                <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
+            </div>
         </div>
+        <a href="sources.html">Sources</a>
+        <a href="contactus.html">Contact us?</a>
+        <a href="aware.html">Cyber Aware</a>
+        <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+    </div>
 
         <div class="grid-container">
             <img class="item1" src="images/logo/png/logo-color.png" alt="NATIONAL CYBER SECURITY CENTRE"> <!-- haven't got the CSS working for this part yet-->
