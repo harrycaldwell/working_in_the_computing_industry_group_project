@@ -7,12 +7,15 @@ body{ /*Place holder body CSS*/
 }
 h1{
     font-size: 40px;
+    margin: 5px;
 }
 h2{
     font-size: 30px;
+    margin: 5px;
 }
 h3{
     font-size: 25px;
+    margin: 5px;
 }
 /*CSS for the top nav bar any of the colours are just place holders*/
 .topnav{ /*This is the CSS for the whole nav bar*/
@@ -27,7 +30,7 @@ h3{
 .topnav a{ /*This is the CSS for each button on the nav bar*/
     float: left;
     text-align: center;
-    padding: 10px 10px; /*This can allow you to make each button bigger*/
+    padding: 7px 7px; /*This can allow you to make each button bigger*/
     color: white;
     text-decoration: none;
     transition-duration: 0.2s; /*The speed of which the element is changed (for this due to hover)*/
@@ -46,7 +49,7 @@ h3{
 }
 .topnav img.logo{ /*the image with the class logo on the navbar goes to the far right*/
     float: right;
-    height: 38px;
+    height: 32px;
     transition-duration: 0.2s; /*The speed of which the element is changed (for this due to hover)*/
 }
 .topnav img.logo:hover{
@@ -55,8 +58,9 @@ h3{
 }
 
 /*CSS for possible grid system to allow for a responsive design???*/
-.item1 { grid-area:
-        header;
+.item1 {
+    grid-area: header;
+    padding-top: 20px;
 }
 .item2 {
     grid-area: main;
@@ -73,6 +77,7 @@ h3{
 }
 img.item3 {
     width: 100%;
+    max-width: 500px;
 }
 
 img.item1{ /*header image this does not work yet*/
@@ -83,14 +88,15 @@ img.item1{ /*header image this does not work yet*/
 /*different media queries allow for change in CSS and HTML (AKA small screen less seen) these can be changed using the grid-template-areas and making the items visibility hidden like below*/
 @media screen and (min-width: 800px) { /*this is the grid CSS for a normal screen size*/
     .grid-container {
+        width:100%;
         display: grid;
         grid-template-areas:
         'header header header header header header'
         'main main main main right right'
         'footer footer footer footer footer footer';
-        gap: 10px;
+        gap: 5px;
         background-color: #2196F3;
-        padding: 10px;
+        padding: 5px;
     }
     /*.item3{
         visibility: visible; /*encase it wasn't visible
@@ -98,15 +104,16 @@ img.item1{ /*header image this does not work yet*/
 }
 @media screen and (orientation: portrait) and (max-width: 799px) { /*for phone like screen (not tested on my phone yet)*/
     .grid-container {
+        width:100%;
         display: grid;
         grid-template-areas:
         'header header header header header header'
         'main main main main main main'
         'right right right right right right'
         'footer footer footer footer footer footer';
-        gap: 10px;
+        gap: 5px;
         background-color: #2196F3;
-        padding: 10px;
+        padding: 5px;
     }
     /*.item3{ /*right is not displayed for this screen size
         display: none;
@@ -115,6 +122,7 @@ img.item1{ /*header image this does not work yet*/
 }
 @media screen and (max-device-width: 799px) and (orientation: landscape) { /*for smaller screens*/
     .grid-container {
+        width:100%;
         display: grid;
         grid-template-areas:
         'header header header header header header'
@@ -123,7 +131,7 @@ img.item1{ /*header image this does not work yet*/
         'footer footer footer footer footer footer';
         gap: 10px;
         background-color: #2196F3;
-        padding: 10px;
+        padding: 5px;
     }
     /*.item3{ /*right is not displayed for this screen size
         display: none;
@@ -133,7 +141,6 @@ img.item1{ /*header image this does not work yet*/
 .grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
 
@@ -179,7 +186,7 @@ textarea {
     font-family: Arial, serif;
     background-color: lightblue;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     text-align: left;
     border: none;
@@ -198,7 +205,7 @@ textarea {
 .panel {
     font-family: Arial, serif;
     text-align: left;
-    padding: 0 18px;
+    padding: 0 5px;
     background-color: white;
     display: none;
     overflow: hidden;
@@ -222,7 +229,7 @@ textarea {
     font-family: Arial, serif; /* Important for vertical align on mobile phones */
     font-size: 100%;
     text-align: center;
-    padding: 10px 10px;
+    padding: 7px 7px;
     transition-duration: 0.2s;
 }
 
@@ -281,4 +288,72 @@ textarea {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*related pages for advice and guidance*/
+.related_page{
+    width: 30%;
+    background-color: lightblue;
+    margin: 5px;
+    align-content: center;
+    float: left;
+    transition-duration: 0.2s;
+}
+
+.related_page a{
+    text-decoration: none;
+}
+
+.related_page img{
+    height: 100%;
+    width: 100%;
+}
+
+.related_page:hover{
+    transition-duration: 0.2s;
+    background-color: #2196F3;
+}
+
+@media screen and (min-width: 1130px) {
+    .related_page_title {
+        text-align: center;
+        font-size: 22px;
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        height: 75px;
+        overflow: hidden;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    .related_page_title {
+        visibility: hidden;
+        text-align: center;
+        font-size: 0px;
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .related_page_title {
+        text-align: center;
+        font-size: 22px;
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        height: 75px;
+        overflow: hidden;
+        visibility: visible;
+    }
+}
+
+/*tips for the advice_guidance.html page*/
+.tips_ol{
+    text-align: left;
+    float: left;
 }

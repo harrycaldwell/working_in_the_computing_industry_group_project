@@ -4,33 +4,35 @@
     <meta name="viewport" content="width=device-width, initial scale=1">
     <title>CI453 group project</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+    <script src="javaScript/navBar.js"></script><!-- This is to make the navbar hide when scrolling -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"><!--This is the favicon of the page-->
 
 </head>
 
 <body>
-<!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+<!-- this is the navbar. The topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
 <div class="topnav" id="myTopnav">
     <!-- the active class specifies which page you are on -->
     <a href="index.html">Home</a>
-    <!-- these are just examples of pages for now -->
-    <div class="dropdown">
-        <button class="dropbtn">Advice & Guidance
+    <div class="dropdown"> <!--This is the dropdown button that activates on hover and displays the other pages that are in this section of the site-->
+        <button class="dropbtn active">Advice & Guidance
             <i class="fa fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content"><!--These are the links inside of the dropdown menu-->
             <a href="recovering-a-hacked-account.html">Recovering an account</a>
             <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
-            <a href="Data_and_devices.html">data and devices</a>
-            <a href="mitigation.html">Mitigation</a>
+            <a href="Data-and-devices.html">Data and Devices</a>
+            <a href="mitigation.html" class="active">Mitigation</a>
         </div>
     </div>
-    <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+    <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo"><!--This is the website logo (top right corner of the screen)-->
 </div>
 
     <div class="grid-container">
-        <div class="item1">Data and devices</div>
-        <div class="item2">
+        <div class="item1"><!--item1 is the title/header of the page-->
+            <h1>Data and devices</h1>
+        </div>
+        <div class="item2"><!--item2 is for the left side of the page-->
             <p>Devices such as smartphones, tablets, PC's and laptops are becoming increasingly more secure, however this does not mean that hackers are unable to steal your data. Smart devices are the everyday items that connect to the internet and are becoming increasingly more popular in households.<br>This can include both 'hi-tech' items (think smart speakers, fitness trackers and security cameras), and also standard household items (such as fridges, lightbulbs and doorbells). Unlike conventional household items, you can't just switch on a smart device and forget it.<br>To combat this you should be doing regular updates that are put out by your devices vendor and ensuring that your device is has an anti-malware software installed.</p>
             
             <h2>Securing smart devices</h2>
@@ -79,7 +81,6 @@
                     <li>Use a secure email service</li>
                 </ul>
         </div>
-        <div class="item4">Footer</div>
     </div>
 </body>
 

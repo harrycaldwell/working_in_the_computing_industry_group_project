@@ -4,38 +4,37 @@
         <meta name="viewport" content="width=device-width, initial scale=1">
         <title>CI453 group project</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
-        <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+        <script src="javaScript/navBar.js"></script><!-- This is to make the navbar hide when scrolling -->
+        <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"><!--This is the favicon of the page-->
     </head>
 
     <body>
-    <!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+    <!-- this is the navbar. The topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
     <div class="topnav" id="myTopnav">
         <!-- the active class specifies which page you are on -->
-        <a href="index.html" class="active">Home</a>
-        <!-- these are just examples of pages for now -->
-        <div class="dropdown">
-            <button class="dropbtn">Advice & Guidance
+        <a href="index.html">Home</a>
+        <div class="dropdown"> <!--This is the dropdown button that activates on hover and displays the other pages that are in this section of the site-->
+            <button class="dropbtn active">Advice & Guidance
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content"><!--These are the links inside of the dropdown menu-->
                 <a href="recovering-a-hacked-account.html">Recovering an account</a>
                 <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
-                <a href="Data_and_devices.html">data and devices</a>
-                <a href="mitigation.html">Mitigation</a>
+                <a href="Data-and-devices.html">Data and Devices</a>
+                <a href="mitigation.html" class="active">Mitigation</a>
             </div>
         </div>
-        <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+        <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo"><!--This is the website logo (top right corner of the screen)-->
     </div>
 
         <div class="grid-container">
             <img class="item1" src="images/logo/png/logo-color.png" alt="NATIONAL CYBER SECURITY CENTRE"> <!-- haven't got the CSS working for this part yet-->
 
-            <div class="item1">
+            <div class="item1"><!--item1 is the title/header of the page-->
                 <h2>What is cyber security?</h2>
             </div>
 
-            <div class="item2">
+            <div class="item2"><!--item2 is for the left side of the page-->
                 <p>
                     Cyber security is the means by which individuals and organisations reduce the risk of being affected by cyber crime.
                 </p>

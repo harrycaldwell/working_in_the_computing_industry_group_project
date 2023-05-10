@@ -4,55 +4,55 @@
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>CI453 group project</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+  <script src="javaScript/navBar.js"></script><!-- This is to make the navbar hide when scrolling -->
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"><!--This is the favicon of the page-->
 
 </head>
 
 <body>
-<!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+<!-- this is the navbar. The topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
 <div class="topnav" id="myTopnav">
   <!-- the active class specifies which page you are on -->
   <a href="index.html">Home</a>
-  <!-- these are just examples of pages for now -->
-  <div class="dropdown">
+  <div class="dropdown"> <!--This is the dropdown button that activates on hover and displays the other pages that are in this section of the site-->
     <button class="dropbtn active">Advice & Guidance
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-      <a href="recovering-a-hacked-account.html" class="active">Recovering an account</a>
+    <div class="dropdown-content"><!--These are the links inside of the dropdown menu-->
+      <a href="recovering-a-hacked-account.html">Recovering an account</a>
       <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
-      <a href="Data_and_devices.html">data and devices</a>
-      <a href="mitigation.html">Mitigation</a>
+      <a href="Data-and-devices.html">Data and Devices</a>
+      <a href="mitigation.html" class="active">Mitigation</a>
     </div>
   </div>
-  <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+  <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo"><!--This is the website logo (top right corner of the screen)-->
 </div>
 
 <div class="grid-container">
 
-  <div class="item1">
+  <div class="item1"><!--item1 is the title/header of the page-->
     <h1>Recovering a hacked account</h1>
     <p>a step by step guide on how to recover your online accounts</p>
   </div>
-  <div class="item2">
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  <div class="item3"><!--item3 is for the right side of the page-->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript><!--encase they have javascript disabled preventing them from using the accordions-->
     <h2>Steps you can take if your account has been hacked</h2>
     <ol>
       <li>
         <button class="accordion">Contact your account provider</button>
-        <div class="panel">
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Go to the account provider's website and search their help or support pages. These will explain in detail the account recovery process (it's likely to be different for each account). If you can't find what you need on the website, use a search engine query (for example, 'How do I recover my Twitter account') and follow the links. </p>
         </div>
       </li>
       <li>
-        <button class="accordion">Check your email account</button>
-        <div class="panel">
+        <button class="accordion">Check your email account</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Check your email filters and forwarding rules. A common tactic used by cyber criminals is to set up a forwarding rule, which means that they will automatically be sent a copy of all emails sent to your account (which would allow them to reset your passwords). Again, you can find detailed instructions about how to do this on the email provider's website, or you can use a search engine.</p>
         </div>
       </li>
       <li>
-        <button class="accordion">Change your passwords</button>
-        <div class="panel">
+        <button class="accordion">Change your passwords</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Once you have confirmed there are no unwanted email forwarding rules in place, you need to:
 
           a. change the password for any account that has been hacked
@@ -63,44 +63,44 @@
         </div>
       </li>
       <li>
-        <button class="accordion">Log all devices and apps out of your account</button>
-        <div class="panel">
+        <button class="accordion">Log all devices and apps out of your account</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Once you have changed your passwords, you need to make sure that any devices and apps (that may still be logged in) are logged out of the relevant account. This can usually be done from the Settings menus of the app or website (or it may be part of the Privacy or Account options). For specific instructions on how to do this, you'll need to refer to the support page for the relevant service. Once you've done this, anyone else attempting to use your account will be prompted to supply the new password.</p>
         </div>
       </li>
       <li>
-        <button class="accordion">Set up 2-step authentication (2SV)</button>
-        <div class="panel">
+        <button class="accordion">Set up 2-step authentication (2SV)</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Many online accounts and services allow you to set up two-step verification (2SV), which means that even if a criminal knows your password, they won't be able to access your accounts. 2SV (which is also known as two-factor authentication or 2FA) usually works by sending you a PIN or code, often sent by SMS or email, which you'll then have to enter to prove that it's really you. It's worth taking the time to set up 2SV on important accounts like email and banking, even if these are already protected using a strong password. It only takes a few minutes, and you're much safer online as a result.</p>
         </div>
       </li>
       <li>
-        <button class="accordion">Update your devices</button>
-        <div class="panel">
+        <button class="accordion">Update your devices</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>You should apply updates to your apps and your device's software as soon as they are available. Updates include protection from viruses and will often include improvements and new features. Applying these updates is one of the most important (and quickest) things you can do to prevent your account from being hacked. You should also turn on 'automatic updates' in your device's settings, if available. This will mean you do not have to remember to apply updates. Note that updating your device may take some time and requires a reliable internet connection, so it’s best to do it at home where you can access your Wi-Fi (and keep your device plugged in).</p>
         </div>
       </li>
       <li>
-        <button class="accordion">Notify your contacts</button>
-        <div class="panel">
+        <button class="accordion">Notify your contacts</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>Get in touch with your account contacts, friends or followers. Let them know that you were hacked, and suggest they treat any recent messages sent from your account with suspicion. This will help them to avoid being hacked themselves. </p>
         </div>
       </li>
       <li>
-        <button class="accordion">Check your bank statements and online shopping accounts</button>
-        <div class="panel">
+        <button class="accordion">Check your bank statements and online shopping accounts</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
         <p>Often a hacked email account can lead to compromises elsewhere. Keep a look-out for unauthorised purchases, or check your bank accounts for any unusual transactions. You can contact your bank directly for further support. Always use official websites or social media channels, or type the address directly into your browser. Don't use the links in any messages you have been sent.</p>
         </div>
       </li>
       <li>
-        <button class="accordion">Contact action fraud</button>
-        <div class="panel">
+        <button class="accordion">Contact action fraud</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <p>If you've lost money, tell your bank and report it as a crime to Action Fraud, the UK's reporting centre for cyber crime (in Scotland, contact the police by dialling 101). You'll be helping the NCSC and law enforcement to reduce criminal activity, and in the process, prevent others from becoming victims.</p>
         </div>
       </li>
     </ol>
   </div>
-  <div class="item3">
+  <div class="item2"><!--item2 is for the left side of the page-->
     <img src="images/hacked image.jpg" alt="hacked computer image" class="item3">
     <p>Whether it's your email, a social media account, or your online bank, losing access to a digital account can be stressful. This guidance explains what you can do to minimise the damage, and how you can regain access to your accounts.</p>
     <h2>How to tell if you've been hacked</h2>
@@ -116,6 +116,6 @@
     <p>In some cases, it may not be possible to recover your account with the online service. In such cases, you'll have to create a new account, if you want to continue using the service. Once you've done this, it's important to give contacts your new details, and tell them you've abandoned the old account. Make sure to update any bank, utility or shopping websites with your new details.</p>
   </div>
 </div>
-<script src="javaScript/accordion.js"></script>
+<script src="javaScript/accordion.js"></script><!--This is for the accordions -->
 </body>
 </html>

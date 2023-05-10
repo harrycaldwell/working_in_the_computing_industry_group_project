@@ -4,45 +4,45 @@
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>CI453 group project</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+  <script src="javaScript/navBar.js"></script><!-- This is to make the navbar hide when scrolling -->
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"><!--This is the favicon of the page-->
 
 
 </head>
 
 <body>
-<!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+<!-- this is the navbar. The topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
 <div class="topnav" id="myTopnav">
   <!-- the active class specifies which page you are on -->
   <a href="index.html">Home</a>
-  <!-- these are just examples of pages for now -->
-  <div class="dropdown">
+  <div class="dropdown"> <!--This is the dropdown button that activates on hover and displays the other pages that are in this section of the site-->
     <button class="dropbtn active">Advice & Guidance
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div class="dropdown-content"><!--These are the links inside of the dropdown menu-->
       <a href="recovering-a-hacked-account.html">Recovering an account</a>
-      <a href="hacked-device-action-to-take.html" class="active">Actions against being hacked</a>
-      <a href="Data_and_devices.html">data and devices</a>
-      <a href="mitigation.html">Mitigation</a>
+      <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
+      <a href="Data-and-devices.html">Data and Devices</a>
+      <a href="mitigation.html" class="active">Mitigation</a>
     </div>
   </div>
-  <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+  <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo"><!--This is the website logo (top right corner of the screen)-->
 </div>
 
 <div class="grid-container">
 
-  <div class="item1">
+  <div class="item1"><!--item1 is the title/header of the page-->
     <h1>How to recover an infected device</h1>
     <p>Advice for those concerned a device has been infected.</p>
   </div>
-  <div class="item2">
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  <div class="item2"><!--item2 is for the left side of the page-->
+    <noscript>Sorry, your browser does not support JavaScript!</noscript><!--encase they have javascript disabled preventing them from using the accordions-->
     <p>Advice for those concerned a device has been infected.</p>
     <p>If you suspect your PC, tablet or phone has been infected with a virus or some other form of malware, follow these three steps to remove the infection and restore your device.</p>
     <ol>
       <li>
-        <button class="accordion">Confirm your device is infected</button>
-        <div class="panel">
+        <button class="accordion">Confirm your device is infected</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <ul>
             <li>
               <p>You may already know for sure because your antivirus product is telling you it has found an infection, or your device is showing ransomware asking you to pay money. </p>
@@ -74,8 +74,8 @@
         </div>
       </li>
       <li>
-        <button class="accordion">Try and fix the infection</button>
-        <div class="panel">
+        <button class="accordion">Try and fix the infection</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <ul>
             <li>
               <p>If you are on a phone or tablet</p>
@@ -98,7 +98,7 @@
                   <p>Open your antivirus product and run a scan, then follow its advice</p>
                 </li>
                 <li>
-                  <p>If your AV can’t clean your device up – you’ll have to wipe it entirely and re-install everything, starting with your operating system. You may need to get expert help to do this.</p>
+                  <p>If your AV can't clean your device up - you'll have to wipe it entirely and re-install everything, starting with your operating system. You may need to get expert help to do this.</p>
                 </li>
                 <li>
                   <p>If you cannot download and install an antivirus product because your web browser (eg Chrome, Edge, Firefox) is infected, you will probably need to get expert help.</p>
@@ -109,8 +109,8 @@
         </div>
       </li>
       <li>
-        <button class="accordion">After you've fixed the infection</button>
-        <div class="panel">
+        <button class="accordion">After you've fixed the infection</button><!--The button for the accordion-->
+        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
           <ul>
             <li>
               <p>Follow our advice for setting up your devices securely and keeping them safe</p>
@@ -136,6 +136,6 @@
     <!-- <img src="images/hacked device image.jpg" alt="Hacked computer image"> -->
   </div>
 </div>
-<script src="javaScript/accordion.js"></script>
+<script src="javaScript/accordion.js"></script><!--This is for the accordions -->
 </body>
 </html>

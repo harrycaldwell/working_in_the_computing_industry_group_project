@@ -4,37 +4,174 @@
         <meta name="viewport" content="width=device-width, initial scale=1">
         <title>CI453 group project</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <script src="javaScript/navBar.js"></script> <!-- This is only for now -->
+        <script src="javaScript/navBar.js"></script> <!-- This is to make the navbar hide when scrolling -->
+        <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"><!--This is the favicon of the page-->
 
     </head>
 
     <body>
-    <!-- the topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
+    <!-- this is the navbar. The topnav class for the navbar adjustments in CSS the myTopnav is for JS -->
     <div class="topnav" id="myTopnav">
         <!-- the active class specifies which page you are on -->
         <a href="index.html">Home</a>
-        <!-- these are just examples of pages for now -->
-        <div class="dropdown">
-            <button class="dropbtn">Advice & Guidance
+        <div class="dropdown"> <!--This is the dropdown button that activates on hover and displays the other pages that are in this section of the site-->
+            <button class="dropbtn active">Advice & Guidance
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content"><!--These are the links inside of the dropdown menu-->
                 <a href="recovering-a-hacked-account.html">Recovering an account</a>
                 <a href="hacked-device-action-to-take.html">Actions against being hacked</a>
-                <a href="Data_and_devices.html">data and devices</a>
-                <a href="mitigation.html">Mitigation</a>
+                <a href="Data-and-devices.html">Data and Devices</a>
+                <a href="mitigation.html" class="active">Mitigation</a>
             </div>
         </div>
-        <a href="sources.html">Sources</a>
-        <a href="contactus.html">Contact us?</a>
-        <a href="aware.html">Cyber Aware</a>
-        <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo">
+        <img src="images/logo/png/logo-no-background-white.png" alt="logo" class="logo"><!--This is the website logo (top right corner of the screen)-->
     </div>
-
+        <!--The grid container is used to present the page in the way we want, it can be adjusted in CSS, there is an item class for each specific area of the grid (e.g class="item1")-->
         <div class="grid-container">
             <img class="item1" src="images/logo/png/logo-color.png" alt="NATIONAL CYBER SECURITY CENTRE"> <!-- haven't got the CSS working for this part yet-->
-            <div class="item1">Header</div>
-            <div class="item2">Main</div>
+            <div class="item1"> <!--item1 is the title/header of the page-->
+                <h1>Mitigation</h1>
+                <p>How to prevent, detect, and control an attack</p>
+            </div>
+            <div class="item3"> <!--item3 is the right hand side of the page-->
+                <noscript>Sorry, your browser does not support JavaScript!</noscript><!--encase they have javascript disabled preventing them from using the accordions-->
+                <h2>Steps you can take to mitigate against an attack</h2>
+                <ol>
+                    <li>
+                        <button class="accordion">Backup your data</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>One quick and easy way to mitigate against an attack is to have a backup of all your data, this can be done by using another drive which can store all the data on your computer so if you lose any data then you can us this backup drive to recover lost data. You can also have a backup by using the cloud, there are many cloud services available which can do this e.g OneDrive, GoogleDrive and more, these may require a subscription fee but these backups can be access by anything that has access to the internet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Encrypt your sensitive data</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>Make sure all of your sensitive data is encrypted this will help prevent access to this data and only those with authorisation can access this data. To do this in windows follow these steps;</p>
+                            <ol>
+                                <li>
+                                    <p>Open file explorer and navigate to the file or folder you wish to encrypt</p>
+                                </li>
+                                <li>
+                                    <p>Right-click (or press and hold) the file or folder and select properties in the dropdown menu</p>
+                                </li>
+                                <li>
+                                    <p>Select the advanced button and then select the encrypt contents to secure data check box</p>
+                                </li>
+                                <li>
+                                    <p>Select ok to close the advanced attributes window, select apply, then select ok</p>
+                                </li>
+                            </ol>
+                            <p>You can also encrypt whole drives, to do this on windows 10 follow these instructions;</p>
+                            <ol>
+                                <li>
+                                    <p>Sign in to the device as an administrator</p>
+                                </li>
+                                <li>
+                                    <p>Select the windows button (usually in the bottom left hand corner) and open up settings</p>
+                                </li>
+                                <li>
+                                    <p>Navigate to update & security then to device encryption (if device encryption isn't there then it isn't available to your device however you may be able to use standard BitLocker encryption instead</p>
+                                </li>
+                                <li>
+                                    <p>Turn on device encryption</p>
+                                </li>
+                            </ol>
+                            <p>To turn on standard BitLocker encryption on windows 10 (not for home edition) follow these instructions;</p>
+                            <ol>
+                                <li>
+                                    <p>Sign in to the device as an administrator</p>
+                                </li>
+                                <li>
+                                    <p>In the search bar search "manage bitlocker" and select fromm the results, or this can be found through the control panel > system security > bitlocker drive encryption > manage bitlocker</p>
+                                </li>
+                                <li>
+                                    <p>Select turn on bitlocker and follow the instructions</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Conduct employee training regularly/Keep updated with attackers techniques</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>Make sure you are well versed in the techniques attackers can use. A common technique used by attackers is phishing, these can be in the form of websites, emails, texts, and more, they are usually messages that seem legitimate organisations like banks, they can ask for sensitive data (e.g login details or bank details). Make sure you know how these companies would actually get into contact with you and know the company email/phone number/website, if you are not sure about a site you are on check the link at the top of the browser that you are on, your banks should have HTTPS in front of the link if it is HTTP then it is likely to be a false site. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Keep your devices up to date</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>Make sure your device is updated as this not only allows for more features with the device it also fixes known bugs that can create flaws in device security or vulnerabilities so keeping updated allows for these issues to be patched.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Use strong passwords</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>The majority of data breaches are a result of weak passwords. Attackers use many ways to crack passwords and by having a strong password you reduce the chances of your password being cracked. You can create a strong password by using the follow;</p>
+                            <ul>
+                                <li>
+                                    <p>Your password should contain 8 or more characters</p>
+                                </li>
+                                <li>
+                                    <p>Your password should not be a word or anything like a word</p>
+                                </li>
+                                <li>
+                                    <p>Each of your passwords should be different from the last</p>
+                                </li>
+                                <li>
+                                    <p>Don't only use letters, you can use punctuation, capitalised and uncapitalized letters and numbers </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Reduce your attack surface</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>Your attack surfaces are areas when you could be vulnerable to attackers. There are 3 main attack surfaces:</p>
+                            <ol>
+                                <li>
+                                    <p>Social engineering attack surface: this is where attackers use techniques to manipulate you to try and gain sensitive information</p>
+                                </li>
+                                <li>
+                                    <p>Physical attack surface: this is the physical space around your devices where attackers could use your device to access sensitive information</p>
+                                </li>
+                                <li>
+                                    <p>Digital attack surface: this is made of the applications you use, the type of security you have, the operating system you use, what networks the device is connected to. This is where attackers use vulnerabilities with the software on the device to gain access to sensitive data</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="accordion">Prevent the spread of malware</button><!--The button for the accordion-->
+                        <div class="panel"><!--this div is what is in the accordion (usually hidden)-->
+                            <p>You can reduce the likelihood of malicious content reaching your devices through a combination of:</p>
+                            <ol>
+                                <li>filtering to only allow file types you would expect to receive</li>
+                                <li>blocking websites that are known to be malicious</li>
+                                <li>actively inspecting content</li>
+                                <li>using signatures to block known malicious code</li>
+                            </ol>
+                            <p>These are typically done by network services rather than users' devices.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="item2"><!--item2 is for the left side of the page-->
+                <h2>What is mitigation?</h2>
+                <p>Mitigation is how to deal with effects of malware and how to prevent an infection</p>
+                <h3>There are 3 main types of mitigation they are:</h3>
+                <ul>
+                    <li>
+                        <p>Reducing the likelihood of being infected</p>
+                    </li>
+                    <li>
+                        <p>Reducing the spread of malware</p>
+                    </li>
+                    <li>
+                        <p>Reducing the impact of the infection</p>
+                    </li>
+                </ul>
+            </div>
         </div>
+    <script src="javaScript/accordion.js"></script> <!--This is for the accordions -->
     </body>
 </html>
