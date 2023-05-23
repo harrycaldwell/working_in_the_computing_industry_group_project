@@ -207,7 +207,7 @@ textarea {
     text-align: left;
     padding: 0 5px;
     background-color: white;
-    /*display: none;*/
+    display: none;
     overflow: hidden;
     font-size: 20px;
 }
