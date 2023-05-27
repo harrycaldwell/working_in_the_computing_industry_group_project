@@ -59,27 +59,38 @@ h3{
 
 /*CSS for possible grid system to allow for a responsive design???*/
 .item1 {
+    background-color: rgba(255, 255, 255, 0.8);
     grid-area: header;
     padding-top: 20px;
 }
 .item2 {
+    background-color: rgba(255, 255, 255, 0.8);
     grid-area: main;
     text-align: left;
 }
 .item3 {
+    background-color: rgba(255, 255, 255, 0.8);
     grid-area: right;
 }
 .item4 {
     grid-area: footer;
-    background-color: #000137;
+    background-color: #2196F3;
+    color: white;
     width: 100%;
     bottom: 0;
+}
+.item4 a{
+    transition-duration: 0.5s;
+    color: white;
+}
+.item4 a:hover{
+    transition-duration: 0.5s;
+    color: black;
 }
 img.item3 {
     width: 100%;
     max-width: 500px;
 }
-
 img.item1{ /*header image this does not work yet*/
     float: left;
     object-fit: contain;
@@ -139,7 +150,6 @@ img.item1{ /*header image this does not work yet*/
     } */
 }
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     font-size: 30px;
 }
